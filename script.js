@@ -6,5 +6,7 @@ const wordCount = document.getElementById("word-count");
 countButton.addEventListener("click", () => {
   const text = textInput.value;
   const words = text.trim().split(/\s+/).length;
-  wordCount.textContent = `Word count: ${words}`;
+  const characters = text.length; // This line counts all characters, including spaces
+  wordCount.textContent = `Word count: ${words}, Character count: ${characters}`;
 });
+

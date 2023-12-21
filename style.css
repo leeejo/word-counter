@@ -17,6 +17,12 @@ textarea {
   margin-bottom: 10px;
 }
 
+.row {
+  display: flex; /* Make each row a flex container */
+  flex-direction: row; /* Align elements horizontally within each row */
+  align-items: center; /* Vertically center elements within each row */
+}
+
 button {
   padding: 10px 20px;
   background-color: #4CAF50;
